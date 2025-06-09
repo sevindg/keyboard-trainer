@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Клавиатурный тренажер</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Подключение simple-keyboard -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-keyboard@3.7.95/build/css/index.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Клавиатурный тренажер</h1>
+    <div class="target-text">Фраза: <span id="phrase">Помогите спасти Реботику!</span></div>
+    <div id="nextChar">Следующий символ: <span>—</span></div>
+    <textarea id="inputArea" placeholder="Начните печатать здесь..."></textarea>
+    <div id="result"></div>
+    <div id="cpmDisplay">Символов в минуту: 0</div>
+    <button id="resetButton" style="display: none;">Начать заново</button>
+    <div class="simple-keyboard"></div>
+  </div>
+
+  <!-- Подключение simple-keyboard -->
+  <script src="https://cdn.jsdelivr.net/npm/simple-keyboard@3.7.95/build/index.min.js"></script>
+  <!-- Подключение script.js после simple-keyboard -->
+  <script src="script.js"></script>
+</body>
+</html>
